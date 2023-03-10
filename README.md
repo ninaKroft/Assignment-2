@@ -8,3 +8,4 @@ calculates circumference COMPLETE <br>
 calculates area of circle COMPLETE <br>
 display error message when negative number is inserted INCOMPLETE <br>
 display error message when text is inserted INCOMPLETE <br>
+make it fancy INCOMPLETE <br>
