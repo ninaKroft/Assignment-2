@@ -3,8 +3,8 @@ Assignment-2 for ICS20: program that calculates the circumference and area of a 
 
 PROGRESS ON PROGRAM:
 
-takes user data COMPLETE
-calculates circumference COMPLETE
-calculates area of circle COMPLETE
-display error message when negative number is inserted INCOMPLETE
-display error message when text is inserted INCOMPLETE
+takes user data COMPLETE <br>
+calculates circumference COMPLETE <br>
+calculates area of circle COMPLETE <br>
+display error message when negative number is inserted INCOMPLETE <br>
+display error message when text is inserted INCOMPLETE <br>
