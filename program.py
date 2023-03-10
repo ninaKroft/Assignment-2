@@ -3,7 +3,9 @@
 # calculates the circumference and area of the circle
 # prints the results
 
-pi = 3.14159265359
+pi = 3.14159
+
+print("Please enter the diameter:")
 
 def diameter():                            #taking user input of diameter
     global calcDiameter
@@ -20,4 +22,4 @@ def circleArea():                                         #calculating area of t
     calcCircleArea = pi * calcRadius * calcRadius
     return calcCircleArea
 
-print("For a circle with a diameter of", diameter(), ", the circumference is:", circumference(), "and the area is:", circleArea())
+print("For a circle with a diameter of", diameter(), "\n" "The circumference is:", circumference(), "\n" "The area is:", circleArea())
