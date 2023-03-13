@@ -6,8 +6,11 @@
 <body>
 <h1>Circumference and area calculator</h1>
 <p>Extra php program for assigment-2</p>
-function diameter() {
+<form action="calculations.php" method="post">
+<input type="text" name="diameter">
+<br>
+<input type="submit">
+</form>
 
-}
 </body>
 </html>
