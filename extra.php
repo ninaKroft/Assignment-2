@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>Circumference and area calculator</h1>
-<p>Extra php program for assigment-2</p>
+<p>Extra php program for assignment-2</p>
 <form action="calculations.php" method="post">
 <input type="text" name="diameter">
 <br>
