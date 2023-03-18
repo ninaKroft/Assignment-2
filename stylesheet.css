@@ -1,1 +1,10 @@
+#title {
+    font-weight:bold;
+    font-family:Verdana;
+    color:blue;
+    text-decoration:underline;
+}
 
+.text {
+    font-family:Verdana;
+}
