@@ -1,3 +1,12 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+<h1 class="text">Here are your results!</h1>
+<br>
+<br>
 <?php
 if ( isset( $_POST['diameter'] ) ){
     $diameter = $_POST['diameter'];
@@ -9,3 +18,10 @@ if ( isset( $_POST['diameter'] ) ){
     echo "The area is: " . $area;
     
 }
+?>
+<br>
+<br>
+<p>Click on the link below to return to the main page.</p>
+<a href="./index.html" target="_self">Click here</a>
+</body>
+</html>
