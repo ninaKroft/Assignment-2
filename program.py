@@ -19,7 +19,7 @@ def circumference():                      #calculating radius and circumference
     return calcCircumference
 
 def circleArea():                                         #calculating area of the circle
-    calcCircleArea = pi * calcRadius ** 2
+    calcCircleArea = calcRadius ** 2 * pi
     return calcCircleArea
 
 print("For a circle with a diameter of", diameter(), "\n" "The circumference is:", circumference(), "\n" "The area is:", circleArea())
