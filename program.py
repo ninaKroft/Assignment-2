@@ -12,14 +12,14 @@ def diameter():                            #taking user input of diameter
     calcDiameter = float(input())
     return calcDiameter
 
-def circumference():                      #calculating radius and circumference
+def circumference():                   #calculating radius and circumference
     global calcRadius
     calcRadius = calcDiameter / 2
     calcCircumference = 2 * pi * calcRadius
     return calcCircumference
 
 def circleArea():                                         #calculating area of the circle
-    calcCircleArea = calcRadius ** 2 * pi
+    calcCircleArea = pi * calcRadius * calcRadius
     return calcCircleArea
 
 print("For a circle with a diameter of", diameter(), "\n" "The circumference is:", circumference(), "\n" "The area is:", circleArea())
