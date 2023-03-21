@@ -19,5 +19,9 @@ if ( isset( $_POST['diameter'] ) ){
     
 }
 ?>
+<br>
+<br>
+<p>Click on the link below to go back to the main page.</p>
+<a href="./index.html">Click here</a>
 </body>
 </html>
