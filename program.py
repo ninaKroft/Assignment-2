@@ -7,14 +7,12 @@ pi = 3.14159
 
 print("Please enter the diameter:")
 
-def diameter():                            #taking user input of diameter
-    global calcDiameter
-    calcDiameter = float(input())
-    return calcDiameter
+
+diameter = input()
 
 def circumference():                   #calculating radius and circumference
     global calcRadius
-    calcRadius = calcDiameter / 2
+    calcRadius = int(diameter) / 2
     calcCircumference = 2 * pi * calcRadius
     return calcCircumference
 
@@ -22,4 +20,12 @@ def circleArea():                                         #calculating area of t
     calcCircleArea = pi * calcRadius * calcRadius
     return calcCircleArea
 
-print("For a circle with a diameter of", diameter(), "\n" "The circumference is:", circumference(), "\n" "The area is:", circleArea())
+try:
+    x = int(diameter)                 #Checks to see if the diameter can become an integer.
+except ValueError:
+    print("You entered text. Please run the program again and input a valid number.")  #If x cannot be turned into an integer, it means the input was text. So it will raise the "ValueError" which will print the message.
+else:
+    if int(diameter) < 0:
+        print("You entered a negative number. Please run the program again and input a valid number.")
+    else:
+        print("For a circle with a diameter of", diameter, "\n" "The circumference is:", circumference(), "\n" "The area is:", circleArea())
