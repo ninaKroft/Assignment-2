@@ -44,10 +44,13 @@ if ( isset( $_POST['diameter'] ) ){
         echo "You entered text. Please return to the calculator page and enter a valid number.";
         exit();
     }
+    else {
+        echo "The circumference is: " . circumference($radius) . "<br>";
+        echo "The area is: " . area($radius); 
+    }
 
 
-    echo "The circumference is: " . circumference($radius) . "<br>";
-    echo "The area is: " . area($radius); 
+    
 }
 ?>
 <br>
