@@ -32,10 +32,10 @@ if ( isset( $_POST['diameter'] ) ){
         }
 
     try {
-        checkNegative($diameter);
+        checkNegative($diameter);  #runs the checkNegative() function. If the number is negative, it will "throw" an exception.
     }
     catch(Exception $e) {
-        echo "Message:" .$e->getMessage();
+        echo "Message:" .$e->getMessage();   #If an exception is thrown by the checkNegative() function, this will "catch" it then print the error message I defined above then stop the code.
         exit();
     }
 
