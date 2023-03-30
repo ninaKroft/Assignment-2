@@ -10,13 +10,36 @@
 <?php
 if ( isset( $_POST['diameter'] ) ){
     $diameter = $_POST['diameter'];
-    $pi = 3.14159;
     $radius = $diameter / 2;
-    $circumference = 2 * $pi * $radius;
-    $area = $pi * $radius * $radius;
-    echo "The circumference is: " . $circumference . "<br>";
-    echo "The area is: " . $area;
+
+        function checkNegative($diameter) {
+            if ($diameter<0) {
+                throw new Exception("You entered a negative number. Please return to the calculator page and enter a valid number.");
+            }
+            return true;
+        }
+
+        function circumference($radius) {
+            $pi = 3.14159;
+            $circumference = 2 * $pi * $radius;
+            return $circumference;
+        }
     
+        function area($radius){
+            $pi = 3.14159;
+            $area = $pi * $radius * $radius;
+            return $area;
+        }
+
+    try {
+        checkNegative($diameter);
+        echo "Value must be positive.";
+    }
+    catch(Exception $e) {
+        echo "Message:" .$e->getMessage();
+    }
+    echo "The circumference is: " . circumference($radius) . "<br>";
+    echo "The area is: " . area($radius);  
 }
 ?>
 <br>
