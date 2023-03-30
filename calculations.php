@@ -33,13 +33,15 @@ if ( isset( $_POST['diameter'] ) ){
 
     try {
         checkNegative($diameter);
-        echo "Value must be positive.";
     }
     catch(Exception $e) {
         echo "Message:" .$e->getMessage();
+        exit();
     }
+
+
     echo "The circumference is: " . circumference($radius) . "<br>";
-    echo "The area is: " . area($radius);  
+    echo "The area is: " . area($radius); 
 }
 ?>
 <br>
