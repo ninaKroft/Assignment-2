@@ -44,8 +44,9 @@ if ( isset( $_POST['diameter'] ) ){
     }
 
 
-    if (checkText($diameter) === 1) {
+    if (checkText($diameter)) {
         echo "You entered text. Please return to the calculator page and enter a valid number.";
+        exit();
     }
     else {
         echo "The circumference is: " . circumference($radius) . "<br>";
