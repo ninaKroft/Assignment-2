@@ -41,7 +41,7 @@ if ( isset( $_POST['diameter'] ) ){
 
 
     if (is_string($diameter) === true){
-        echo "You entered text. Please return to the calculator page and enter a valid number.";
+        trigger_error("You entered text. Please return to the calculator page and enter a valid number.");
         exit();
     }
     else {
