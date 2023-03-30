@@ -19,6 +19,10 @@ if ( isset( $_POST['diameter'] ) ){
             return true;
         }
 
+        function checkText($diameter) {
+            return is_string($diameter);
+        }
+
         function circumference($radius) {
             $pi = 3.14159;
             $circumference = 2 * $pi * $radius;
@@ -40,16 +44,13 @@ if ( isset( $_POST['diameter'] ) ){
     }
 
 
-    if (is_string($diameter) === true){
-        trigger_error("You entered text. Please return to the calculator page and enter a valid number.");
-        exit();
+    if (checkText($diameter) === 1) {
+        echo "You entered text. Please return to the calculator page and enter a valid number."
     }
     else {
         echo "The circumference is: " . circumference($radius) . "<br>";
         echo "The area is: " . area($radius); 
     }
-
-
     
 }
 ?>
