@@ -19,8 +19,8 @@ if ( isset( $_POST['diameter'] ) ){
             return true;
         }
 
-        function checkText($diameter) {
-            return is_string($diameter);
+        function checkNumber($diameter) {
+            return is_numeric($diameter);
         }
 
         function circumference($radius) {
@@ -35,6 +35,10 @@ if ( isset( $_POST['diameter'] ) ){
             return $area;
         }
 
+    if (isNumber($diameter) !== True) {
+        echo "You entered text. Please return to the calculator page and enter a valid number.";
+        exit();
+    }
     try {
         checkNegative($diameter);  #runs the checkNegative() function. If the number is negative, it will "throw" an exception.
     }
@@ -43,17 +47,10 @@ if ( isset( $_POST['diameter'] ) ){
         exit();
     }
 
+    }
 
-    if (checkText($diameter)) {
-        echo "You entered text. Please return to the calculator page and enter a valid number.";
-        exit();
-    }
-    else {
         echo "The circumference is: " . circumference($radius) . "<br>";
-        echo "The area is: " . area($radius); 
-    }
-    
-}
+        echo "The area is: " . area($radius);
 ?>
 <br>
 <br>
