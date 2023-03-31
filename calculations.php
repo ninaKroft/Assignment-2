@@ -4,11 +4,11 @@
 <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
-<h1 class ="title">Here are your results!</h1>
+<center><h1 class ="title">Here are your results!</h1><center>
 <br>
 <br>
 <br>
-<p class ="text">Click on the link below to go back to the main page.</p>
+<p class ="text" style="color:yellow;">Click on the link below to go back to the main page.</p>
 <a href="./index.html">Click here</a>
 <br>
 <br>
