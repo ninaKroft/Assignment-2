@@ -7,6 +7,8 @@
 <h1 class="text">Here are your results!</h1>
 <br>
 <br>
+<p>Click on the link below to go back to the main page.</p>
+<a href="./index.html">Click here</a>
 <?php
 if ( isset( $_POST['diameter'] ) ){
     $diameter = $_POST['diameter'];
@@ -47,17 +49,12 @@ if ( isset( $_POST['diameter'] ) ){
         echo "Error: " .$e->getMessage();   #If an exception is thrown by the checkNegative() function, this will "catch" it then print the error message I defined above then stop the code.
         exit();
     }
-    
     echo "The circumference is: " . circumference($radius) . "<br>";
     echo "The area is: " . area($radius);
-
+        
     }
-
         
 ?>
-<br>
-<br>
-<p>Click on the link below to go back to the main page.</p>
-<a href="./index.html">Click here</a>
+
 </body>
 </html>
